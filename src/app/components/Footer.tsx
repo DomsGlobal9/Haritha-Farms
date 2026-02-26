@@ -86,11 +86,11 @@ Jogulamba Gadwal District,
             <div className="space-y-4 text-sm">
               <div className="flex flex-col gap-1">
                  <span className="text-xs uppercase tracking-widest opacity-50">Phone</span>
-                 <a href="tel:+919876543210" className="hover:text-accent font-medium">+91 98765 43210</a>
+                 <a href="tel:+919876543210" className="hover:text-accent font-medium">+91 9632791544</a>
               </div>
               <div className="flex flex-col gap-1">
                  <span className="text-xs uppercase tracking-widest opacity-50">Email</span>
-                 <a href="mailto:hello@harithafarms.com" className="hover:text-accent font-medium decoration-1 underline underline-offset-4">hello@harithafarms.com</a>
+                 <a href="mailto:operations@harithafarms.in" className="hover:text-accent font-medium decoration-1 underline underline-offset-4">hello@harithafarms.com</a>
               </div>
               
               <div className="flex gap-4 mt-4">
