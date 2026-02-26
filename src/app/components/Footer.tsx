@@ -94,10 +94,10 @@ Jogulamba Gadwal District,
               </div>
               
               <div className="flex gap-4 mt-4">
-                <a href="#" className="hover:text-accent transition-colors"><Facebook size={20} /></a>
-                <a href="#" className="hover:text-accent transition-colors"><Instagram size={20} /></a>
-                <a href="#" className="hover:text-accent transition-colors"><Youtube size={20} /></a>
-                <a href="#" className="hover:text-accent transition-colors"><Twitter size={20} /></a>
+                <a href="https://www.facebook.com/profile.php?id=61587658676691" className="hover:text-accent transition-colors"><Facebook size={20} /></a>
+                <a href="https://www.instagram.com/harithafarmsofficial/" className="hover:text-accent transition-colors"><Instagram size={20} /></a>
+                <a href="https://www.youtube.com/@theharithafarms" className="hover:text-accent transition-colors"><Youtube size={20} /></a>
+                <a href="https://x.com/theharithafarms" className="hover:text-accent transition-colors"><Twitter size={20} /></a>
               </div>
             </div>
           </div>
