@@ -124,7 +124,7 @@ export default function Feed() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+      <section className="relative h-full w-full overflow-hidden flex items-center justify-center pb-6 sm:pb-3 pt-36 sm:pt-40 lg:pt-24">
         <motion.div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/40 z-10" />
           <ImageWithFallback
@@ -136,7 +136,7 @@ export default function Feed() {
 
         <div className="relative z-20 text-center px-6 max-w-5xl mx-auto text-white">
           <FadeIn delay={0.2} direction="up">
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-6 text-[rgb(241,249,247)]">
+            <h1 className="font-serif text-5xl pt-15 md:text-5xl lg:text-8xl leading-tight mb-15 text-[rgb(241,249,247)]">
               Naturally Formulated Feed.<br />
               Responsibly Produced.
             </h1>

@@ -47,7 +47,8 @@ export default function Home() {
       <ScrollProgress />
 
       {/* --- HERO SECTION --- */}
-      <section className="relative min-h-[90vh] md:h-[95vh] w-full overflow-hidden flex items-end pb-12 md:pb-24 px-6">
+      {/* add top padding so content isn't hidden under fixed header */}
+      <section className="relative min-h-[90vh] md:h-[95vh] w-full overflow-hidden flex items-end pt-38 md:pt-40 pb-12 md:pb-24 px-6">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/30 z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1610] via-[#0F1C15]/60 to-transparent z-10" />
@@ -71,11 +72,11 @@ export default function Home() {
                   • Organic Farming
                 </span>
               </div>
-              <h1 className="font-serif text-4xl sm:text-5xl md:text-8xl lg:text-9xl leading-[0.9] text-white mb-8 md:mb-10 max-w-5xl">
-                <span className="block text-white font-bold text-[88px]">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[0.9] text-white mb-8 md:mb-10 max-w-5xl">
+                <span className="block text-white font-bold text-[64px] sm:text-[72px] md:text-[80px]">
                   Naturally Raised.
                 </span>
-                <span className="block not-italic text-white/90 font-light text-3xl sm:text-4xl md:text-[64px] lg:text-[80px] text-[64px]">
+                <span className="block not-italic text-white/90 font-light text-2xl sm:text-3xl md:text-[48px] lg:text-[56px]">
                   Ethically Grown.
                 </span>
               </h1>

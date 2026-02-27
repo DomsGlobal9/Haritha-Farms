@@ -612,7 +612,7 @@ export default function FarmDetail() {
     <div className="relative bg-[#FDFCF8] min-h-screen">
       
       {/* --- HERO SECTION --- */}
-      <section ref={heroRef} className="relative h-[85vh] w-full overflow-hidden flex items-end justify-center pb-24">
+      <section ref={heroRef} className="relative h-[85vh] w-full overflow-hidden flex items-end pb-4 md:pb-10 ">
         <motion.div style={{ y }} className="absolute inset-0 z-0">
            <img 
              src={data.heroImage} 

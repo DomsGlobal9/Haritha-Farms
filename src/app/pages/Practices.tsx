@@ -54,7 +54,8 @@ export default function Practices() {
     <div ref={containerRef} className="bg-background relative">
       
       {/* --- HERO SECTION --- */}
-      <section className="relative min-h-[85vh] w-full overflow-hidden flex items-end pb-12 md:pb-24 px-6">
+      <section className="relative min-h-[85vh] w-full overflow-hidden flex items-end pt-16 sm:pt-20 lg:pt-24 pb-12 md:pb-24 px-6">
+
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/30 z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1610] via-transparent to-transparent z-10" />
@@ -71,9 +72,9 @@ export default function Practices() {
         <div className="container mx-auto relative z-20">
           <FadeIn>
             <span className="text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-4 md:mb-6 block">• Conscious Agriculture</span>
-            <h1 className="font-serif text-5xl md:text-8xl lg:text-9xl leading-[1.1] md:leading-[0.9] text-white mb-6 md:mb-10 max-w-5xl font-bold">
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.1] md:leading-[0.9] text-white mb-6 md:mb-10 max-w-5xl font-bold">
               Cultivating Life,<br/>
-              <span className="not-italic font-light text-white/90 text-4xl md:text-[96px]">Not Just Food.</span>
+              <span className="not-italic font-light text-white/90 text-3xl md:text-5xl">Not Just Food.</span>
             </h1>
             <p className="text-base md:text-xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/30 pl-4 md:pl-6">
               Our methods are not new. They are simply forgotten. We return to the wisdom of regenerative farming, where every action heals the land.
