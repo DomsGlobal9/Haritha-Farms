@@ -90,6 +90,8 @@ export default function App() {
           <Route path="blog/recipe-lamb" element={<RecipeLamb />} />
           <Route path="blog/community-food" element={<CommunityFood />} />
           
+
+          
           <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
         </Route>
       </Routes>

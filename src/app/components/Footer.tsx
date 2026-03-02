@@ -43,8 +43,10 @@ export function Footer() {
              <h4 className="font-bold text-black mb-2">Haritha Farms Pvt Ltd</h4>
              <p className="text-black text-xs leading-relaxed opacity-70 max-w-[200px]">
              
-                  <MapPin size={20} /> CIN: U74999KA2024PTC123456
+                  CIN: U74999KA2024PTC123456
              </p>
+              <a href="https://maps.app.goo.gl/zi2xqVmgUA4EZDS8A" target="_blank"
+  rel="noopener noreferrer"><MapPin className="text-black text-xs leading-relaxed opacity-70 max-w-[200px]" size={20} /></a>
              <div className="text-xs leading-relaxed opacity-70 max-w-[240px]">
                <p className="text-black font-medium mb-1">Registered Office:</p>
                <p className="text-black">SY 199/C,207/E2/1
@@ -81,6 +83,14 @@ Jogulamba Gadwal District,
               <li><Link to="/privacy" className="text-black hover:text-accent transition-colors">Privacy Policy</Link></li>
               <li><Link to="/shipping" className="text-black hover:text-accent transition-colors">Shipping Policy</Link></li>
               <li><Link to="/refund" className="text-black hover:text-accent transition-colors">Refund Policy</Link></li>
+              <a
+  href="/sitemap.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-black hover:text-accent transition-colors"
+>
+  Site Map
+</a>
             </ul>
           </div>
 
@@ -90,7 +100,7 @@ Jogulamba Gadwal District,
             <div className="space-y-4 text-sm">
               <div className="flex flex-col gap-1">
                  <span className="text-black text-xs uppercase tracking-widest ">Phone</span>
-                 <a href="tel:+919876543210" className="text-black hover:text-accent font-medium">+91 9876543210</a>
+                 <a href="tel:+919632791544" className="text-black hover:text-accent font-medium">+91 9632791544</a>
               </div>
               <div className="flex flex-col gap-1">
                  <span className="text-black text-xs uppercase tracking-widest ">Email</span>
