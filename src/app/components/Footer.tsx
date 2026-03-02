@@ -84,13 +84,13 @@ Jogulamba Gadwal District,
               <li><Link to="/shipping" className="text-black hover:text-accent transition-colors">Shipping Policy</Link></li>
               <li><Link to="/refund" className="text-black hover:text-accent transition-colors">Refund Policy</Link></li>
               <a
-  href="/sitemap.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-black hover:text-accent transition-colors"
->
-  Site Map
-</a>
+                  href="sitemap.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-accent transition-colors"
+                >
+                  Site Map
+                </a>
             </ul>
           </div>
 
