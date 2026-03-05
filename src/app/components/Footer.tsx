@@ -8,6 +8,8 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 
 
+
+
 export function Footer() {
   return (
     <footer className="relative bg-[rgb(26,60,52)] pt-20 overflow-hidden flex flex-col justify-between min-h-[600px]">
@@ -39,7 +41,7 @@ export function Footer() {
           
           {/* Column 1: Company Info */}
           <div className="space-y-4">
-             <h4 className="font-bold text-white mb-2">Haritha Technologies Pvt Ltd</h4>
+             <h4 className="font-bold text-white mb-2">Haritha Farms Pvt Ltd</h4>
              <p className="text-xs leading-relaxed opacity-70 max-w-[200px]">
                CIN: U74999KA2024PTC123456
              </p>
@@ -89,18 +91,28 @@ Jogulamba Gadwal District,
             <div className="space-y-4 text-sm">
               <div className="flex flex-col gap-1">
                  <span className="text-xs uppercase tracking-widest opacity-50">Phone</span>
-                 <a href="tel:+919876543210" className="hover:text-accent font-medium">+91 98765 43210</a>
+                 <a href="tel:+91 9632791544" className="hover:text-accent font-medium">+91 9632791544</a>
               </div>
               <div className="flex flex-col gap-1">
                  <span className="text-xs uppercase tracking-widest opacity-50">Email</span>
-                 <a href="mailto:hello@harithafarms.com" className="hover:text-accent font-medium decoration-1 underline underline-offset-4">hello@harithafarms.com</a>
+                 <a href="mailto:operations@harithafarms.in" className="hover:text-accent font-medium decoration-1 underline underline-offset-4">operations@harithafarms.in</a>
               </div>
               
               <div className="flex gap-4 mt-4">
-                <a href="#" className="hover:text-accent transition-colors"><Facebook size={20} /></a>
-                <a href="#" className="hover:text-accent transition-colors"><Instagram size={20} /></a>
-                <a href="#" className="hover:text-accent transition-colors"><Youtube size={20} /></a>
-                <a href="#" className="hover:text-accent transition-colors"><Twitter size={20} /></a>
+                <a href="https://www.facebook.com/profile.php?id=61587658676691" className="hover:text-accent transition-colors"><Facebook size={20} /></a>
+                <a href="https://www.instagram.com/harithafarmsofficial/" className="hover:text-accent transition-colors"><Instagram size={20} /></a>
+                <a href="https://www.youtube.com/@theharithafarms" className="hover:text-accent transition-colors"><Youtube size={20} /></a>
+                <a href="https://x.com/theharithafarms" className="hover:text-accent transition-colors">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M18.244 2H21l-6.6 7.54L22 22h-6.828l-5.35-7.006L3.6 22H1l7.058-8.066L2 2h6.828l4.82 6.32L18.244 2zm-2.396 18h1.885L8.117 4H6.088l9.76 16z"/>
+  </svg>
+</a>
               </div>
             </div>
           </div>

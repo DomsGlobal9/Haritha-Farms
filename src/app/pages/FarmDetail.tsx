@@ -14,7 +14,7 @@ const farmData: any = {
   sheep: {
     title: "Sheep Farming",
     heroImage: "https://images.unsplash.com/photo-1758357935338-936a266501d7?q=80&w=1920&auto=format&fit=crop",
-    intro: "Naturally Raised Sheep. Our sheep graze freely on open lands, feeding on natural grasses and growing at their own pace—without artificial fattening or confinement.",
+    intro: "Pasture-Raised Sheep & Lamb — Pure Taste, Honest Farming. Every day begins on open pastures. Sheep and lambs grazing slowly, sunlight on clean greens, calm care in every routine. No hormones. No artificial growth promoters. Just natural grazing, organic fodder, and ethical rearing that respects the animal and the land.",
     anatomy: [
       { 
         label: "Nutrition", title: "Wild Forage Diet", 

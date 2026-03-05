@@ -69,12 +69,12 @@ export default function Practices() {
           />
         </div>
 
-        <div className="container mx-auto relative z-20">
+        <div className="container mx-auto relative z-20 ">
           <FadeIn>
-            <span className="text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-4 md:mb-6 block">• Conscious Agriculture</span>
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.1] md:leading-[0.9] text-white mb-6 md:mb-10 max-w-5xl font-bold">
+            <span className="text-white/80 text-[10px] pt-6 md:text-xs font-bold tracking-[0.2em] uppercase mb-4 md:mb-6 block">• Conscious Agriculture</span>
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-8xl leading-[1.1] md:leading-[0.9] text-white mb-6 md:mb-10 max-w-5xl font-bold">
               Cultivating Life,<br/>
-              <span className="not-italic font-light text-white/90 text-3xl md:text-5xl">Not Just Food.</span>
+              <span className="not-italic font-light text-white/90 text-3xl md:text-6xl">Not Just Food.</span>
             </h1>
             <p className="text-base md:text-xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/30 pl-4 md:pl-6">
               Our methods are not new. They are simply forgotten. We return to the wisdom of regenerative farming, where every action heals the land.

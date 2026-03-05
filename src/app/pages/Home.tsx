@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useSpring } from 'motion/react';
-import { ArrowRight, Leaf, Droplets, Sun, Heart, ShieldCheck, Sprout, Wind, Award, Eye, Users } from 'lucide-react';
+import { ArrowRight, Leaf,Wheat, Phone, MessageCircle, MapPin, Droplets, Sun, Heart, ShieldCheck, Sprout,ChefHat, Wind, Award, Eye, Users } from 'lucide-react';
 import { Button } from '../components/ui/button';
+
 import { FadeIn } from '../components/ui/fade-in';
 import { cn } from '../../lib/utils';
 import murrelFishImage from "../../assets/fish.png";
@@ -48,7 +49,7 @@ export default function Home() {
 
       {/* --- HERO SECTION --- */}
       {/* add top padding so content isn't hidden under fixed header */}
-      <section className="relative min-h-[90vh] md:h-[95vh] w-full overflow-hidden flex items-end pt-38 md:pt-40 pb-12 md:pb-24 px-6">
+      <section className="relative min-h-[115vh] md:h-[95vh] w-full  overflow-hidden flex items-end pt-30 md:pt-34 pb-12 md:pb-24 px-6">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/30 z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1610] via-[#0F1C15]/60 to-transparent z-10" />
@@ -63,7 +64,7 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto relative z-20">
-        <div className="relative z-20 h-full container mx-auto flex flex-col justify-end pb-0 md:px-6">
+        <div className="relative z-20 h-full container mx-auto flex flex-col justify-end pb-0 md:px-8">
          
          <FadeIn delay={0.2} direction="up">
               <div className="flex items-center gap-4 mb-6 md:mb-8">
@@ -79,14 +80,22 @@ export default function Home() {
                 <span className="block not-italic text-white/90 font-light text-2xl sm:text-3xl md:text-[48px] lg:text-[56px]">
                   Ethically Grown.
                 </span>
+                <span className="block not-italic text-[#C7A74C] font-light text-2xl sm:text-3xl md:text-[48px] lg:text-[50px] font-['Playwrite_AT']">
+                  Truly Clean Farming
+                </span>
               </h1>
             </FadeIn>
           
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 md:gap-12 w-full border-t border-white/20 pt-8 md:pt-10 mt-4">
             <FadeIn delay={0.4} direction="up">
               <p className="text-base md:text-xl font-light tracking-wide text-white/80 max-w-xl leading-relaxed">
-                At Haritha Farms, we practice honest, organic animal farming—raising sheep, country hens, and fish in their natural environments, free from hormones and shortcuts.
+              We raise sheep & lamb, country chicken (Natu Kodi), and murrel fish the right way—organic, pesticide‑free fodder, hormone‑free rearing, and natural, stress‑free environments for healthier livestock and honest flavour.
               </p>
+
+               <p className="text-13  pt-4 tracking-[0.2em] text-[#C7A74C] ">
+                Clean fields → Clean feed → Healthier livestock for Indian families.
+              </p>
+              
             </FadeIn>
 
             <FadeIn delay={0.6} direction="up">
@@ -103,127 +112,40 @@ export default function Home() {
         </div>
         </div>
       </section>
+      {/* --- HERO FEATURE BOXES --- */}
+<div className="relative -mt-20 z-30 pt-5">
+  <div className="grid grid-cols-1 md:grid-cols-4 border-t border-white/10">
 
-      {/* --- PHILOSOPHY (Editorial Text) --- */}
-      <section className="py-20 md:py-48 px-6 bg-[#F5F5F0] overflow-hidden">
-        <div className="container mx-auto">
-           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
-              
-              {/* Editorial Image */}
-              <div className="w-full lg:w-5/12 relative group">
-                 <FadeIn delay={0.2}>
-                   <div className="relative aspect-[3/4] overflow-hidden bg-[#E6E2D6]">
-                      <motion.img 
-                        initial={{ scale: 1.2 }}
-                        whileInView={{ scale: 1 }}
-                        transition={{ duration: 1.5, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                        src={handsImage}
-                        alt="Hands holding soil" 
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-[#0A1610]/10 mix-blend-multiply" />
-                   </div>
-                   {/* Decorative Border Offset */}
-                   <div className="absolute -top-6 -right-6 w-full h-full border border-[#1C1C1C]/10 z-[-1] transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-2" />
-                 </FadeIn>
-              </div>
+    <div className="flex flex-col items-center justify-center py-10 bg-[#021A14] border-r border-white/10">
+      <ShieldCheck className="text-[#C7A74C] mb-4" size={28} strokeWidth={1.5} />
+      <p className="text-xs tracking-[0.2em] text-white/70 uppercase text-center">
+        Hormone-Free Rearing
+      </p>
+    </div>
 
-              {/* Editorial Content */}
-              <div className="w-full lg:w-7/12">
-                 <FadeIn>
-                   <div className="flex items-center gap-4 mb-6 md:mb-8">
-                      <div className="h-px w-12 bg-[#0A1610]/30" />
-                      <span className="text-[#0A1610] text-xs font-bold tracking-[0.2em] uppercase">The Philosophy</span>
-                   </div>
-                   
-                   <h2 className="text-4xl md:text-7xl lg:text-8xl font-serif text-[#1C1C1C] leading-[0.9] mb-8 md:mb-10 -ml-1">
-                      Nature, <br/>
-                      <span className="italic text-[#0A1610]/80">Uninterrupted.</span>
-                   </h2>
+    <div className="flex flex-col items-center justify-center py-10 bg-[#021A14] border-r border-white/10">
+      <Sprout className="text-[#C7A74C] mb-4" size={28} strokeWidth={1.5} />
+      <p className="text-xs tracking-[0.2em] text-white/70 uppercase text-center">
+        Organic, Pesticide-Free Fodder
+      </p>
+    </div>
 
-                   <p className="text-lg md:text-2xl text-[#1C1C1C]/70 font-light leading-relaxed mb-10 md:mb-12 max-w-2xl">
-                     Haritha Farms is not just a farm; it is a <span className="text-[#0A1610] font-medium">living ecosystem</span>. We stripped away the industrial layers to reveal the honest, raw beauty of agriculture.
-                   </p>
-                   
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 border-t border-[#1C1C1C]/10 pt-8 md:pt-10">
-                      <div className="group">
-                         <h4 className="text-3xl font-serif text-[#1C1C1C] mb-2 group-hover:text-[#0A1610] transition-colors">0%</h4>
-                         <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#1C1C1C]/50 mb-2 block">Chemicals</span>
-                         <p className="text-sm text-[#1C1C1C]/60 leading-relaxed max-w-[200px]">Complete rejection of synthetic fertilizers and pesticides.</p>
-                      </div>
-                      <div className="group">
-                         <h4 className="text-3xl font-serif text-[#1C1C1C] mb-2 group-hover:text-[#0A1610] transition-colors">100%</h4>
-                         <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#1C1C1C]/50 mb-2 block">Transparency</span>
-                         <p className="text-sm text-[#1C1C1C]/60 leading-relaxed max-w-[200px]">Open gates policy. Come see how your food is grown.</p>
-                      </div>
-                   </div>
-                 </FadeIn>
-              </div>
-           </div>
-        </div>
-      </section>
+    <div className="flex flex-col items-center justify-center py-10 bg-[#021A14] border-r border-white/10">
+      <Heart className="text-[#C7A74C] mb-4" size={28} strokeWidth={1.5} />
+      <p className="text-xs tracking-[0.2em] text-white/70 uppercase text-center">
+        Ethical, Humane Care
+      </p>
+    </div>
 
-      {/* --- WHY HARITHA (New Section) --- */}
-      <section className="py-20 md:py-32 px-6 bg-white">
-        <div className="container mx-auto">
-          <FadeIn>
-            <div className="mb-12 md:mb-20 max-w-3xl">
-              <h2 className="text-4xl md:text-6xl font-serif text-primary mb-6">Why Haritha Farms</h2>
-              <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-                Beyond organic, we are building a legacy of trust. Here is how we ensure excellence in every step of our process.
-              </p>
-            </div>
-          </FadeIn>
+    <div className="flex flex-col items-center justify-center py-10 bg-[#021A14]">
+      <Leaf className="text-[#C7A74C] mb-4" size={28} strokeWidth={1.5} />
+      <p className="text-xs tracking-[0.2em] text-white/70 uppercase text-center">
+        Natural, Stress-Free Growth
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 md:gap-y-16">
-             {[
-               {
-                 title: "Premium Native Breeds",
-                 desc: "We focus exclusively on indigenous breeds that are naturally adapted to our climate, ensuring disease resistance without antibiotics.",
-                 icon: Award
-               },
-               {
-                 title: "Regenerative Grazing",
-                 desc: "Our rotational grazing methods restore soil health, sequester carbon, and ensure our animals always have access to fresh, nutritious pasture.",
-                 icon: Sprout
-               },
-               {
-                 title: "Ethical Rearing",
-                 desc: "Zero confinement. Our animals live outdoors with the freedom to express natural behaviors, resulting in stress-free, healthy lives.",
-                 icon: Heart
-               },
-               {
-                 title: "Farm-to-Table Transparency",
-                 desc: "Complete traceability from our pastures to your plate. We welcome visits so you can verify our practices firsthand.",
-                 icon: Eye
-               },
-               {
-                 title: "Community Ecosystem",
-                 desc: "We support a network of local farmers, sharing knowledge and resources to build a resilient regional food system.",
-                 icon: Users
-               },
-               {
-                 title: "Pure, Chemical-Free",
-                 desc: "Absolutely no synthetic fertilizers, pesticides, growth hormones, or GMOs. Just nature, uninterrupted.",
-                 icon: ShieldCheck
-               }
-             ].map((item, index) => (
-               <FadeIn key={index} delay={index * 0.1}>
-                 <div className="group flex flex-col h-full">
-                    <h3 className="text-2xl font-serif text-primary mb-4">{item.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-8 flex-grow font-light">
-                      {item.desc}
-                    </p>
-                    <div className="w-16 h-16 rounded-2xl bg-primary/5 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-500">
-                      <item.icon strokeWidth={1.5} size={28} />
-                    </div>
-                 </div>
-               </FadeIn>
-             ))}
-          </div>
-        </div>
-      </section>
+  </div>
+</div>
 
       {/* --- STANDARDS (The Triptych - Elastic Accordion) --- */}
       <section className="bg-[#1C1C1C] text-[#F2F0E9] overflow-hidden flex flex-col min-h-screen md:h-screen md:max-h-[1080px]">
@@ -232,11 +154,12 @@ export default function Home() {
             <FadeIn>
                <div className="flex items-center gap-6 mb-4">
                   <div className="h-px w-16 bg-[#C5A059]" />
-                  <span className="text-[#C5A059] text-xs font-bold tracking-[0.3em] uppercase">The Haritha Standard</span>
+                  <span className="text-[#C5A059] text-xs font-bold tracking-[0.3em] uppercase">
+                         What We Raise</span>
                </div>
                <h2 className="text-3xl md:text-5xl font-serif max-w-2xl leading-none text-[rgb(187,241,228)]">
-                  Purity is not a feature.<br/>
-                  <span className="text-[#F2F0E9]/40 text-[rgba(242,242,242,0.4)]">It is our foundation.</span>
+                 Honest livestock, raised right.<br/>
+                  <span className="text-[#F2F0E9]/40 text-[rgba(242,242,242,0.4)]">No hormones. No shortcuts.</span>
                </h2>
             </FadeIn>
          </div>
@@ -245,33 +168,27 @@ export default function Home() {
          <div className="flex flex-col md:flex-row flex-1 w-full border-t border-[#F2F0E9]/5 min-h-0">
             {[
                { 
-                 title: "No Hormones", 
-                 subtitle: "Zero Artificial Growth",
-                 desc: "We respect the natural timeline of life. Our animals grow at their own rhythm, ensuring health and flavor density.",
+                 title: "Murrel Fish", 
+                 subtitle: "Snakehead / Jungle Fish",
+                 desc: "Raised in nature‑balanced ponds with clean water and careful stewardship—no hormones, no antibiotics—for firm, clean fish that thrive naturally.",
                  img: "https://images.unsplash.com/photo-1680769237516-49845493c077?q=80&w=1200&auto=format&fit=crop",
                  icon: ShieldCheck
                },
                { 
-                 title: "Open Pastures", 
-                 subtitle: "True Free Range",
-                 desc: "Acres of untamed land. Sun, rain, and soil. Our livestock isn't just raised; it lives.",
+                 title: "Country Chicken", 
+                 subtitle: "Natu Kodi",
+                 desc: "Free‑range desi chicken that forages, moves, and grows at its own pace. Hormone‑free, nourished on organic greens & grains for authentic flavour and strong natural immunity.",
                  img: "https://images.unsplash.com/photo-1747556060621-d066e0b2fbba?q=80&w=1200&auto=format&fit=crop",
                  icon: Wind
                },
                { 
-                 title: "Clean Diet", 
-                 subtitle: "100% Organic Feed",
-                 desc: "Traditional grains and foraging. Absolutely no industrial by-products or cheap fillers.",
+                 title: "Sheep & Lamb", 
+                 subtitle: "Pasture‑Raised",
+                 desc: "Pasture‑raised on our organic fodder with open movement and gentle handling. Natural growth, better resilience, and clean, layered characteristics families love.",
                  img: "https://images.unsplash.com/photo-1756047890348-e3a5f8e9d9d0?q=80&w=1200&auto=format&fit=crop",
                  icon: Sprout
                },
-               { 
-                 title: "Pure Waters", 
-                 subtitle: "Sustainable Aquaculture",
-                 desc: "Chemical-free ponds mimicking natural river currents. Clean water ensures firm, clean-tasting fish.",
-                 img: murrelFishImage,
-                 icon: Sprout
-               },
+               
             ].map((item, i) => (
                <div 
                   key={i} 
@@ -317,6 +234,137 @@ export default function Home() {
          </div>
       </section>
 
+      
+      {/* --- WHY HARITHA (New Section) --- */}
+      <section className="py-20 md:py-32 px-6 bg-white">
+        <div className="container mx-auto">
+         <FadeIn>
+  <div className="mb-12 md:mb-20 max-w-3xl">
+
+    {/* Top Label */}
+    <div className="flex items-center gap-4 mb-6">
+      <div className="w-12 h-[1px] bg-primary/40"></div>
+      <span className="text-xs tracking-[0.25em] uppercase text-primary/70">
+        The Difference
+      </span>
+    </div>
+
+    <h2 className="text-4xl md:text-6xl font-serif text-primary mb-6">
+      Why Haritha Farms
+    </h2>
+
+    <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+      Beyond organic labels, we build trust through practice. Here is what sets us apart.
+    </p>
+
+  </div>
+</FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 md:gap-y-16">
+             {[
+               {
+                 title: "Premium Native Breeds",
+                 desc: "We focus exclusively on indigenous breeds that are naturally adapted to our climate, ensuring disease resistance without antibiotics.",
+                 icon: Wheat
+               },
+               {
+                 title: "Hormone‑Free. No Shortcuts.",
+                 desc: "We never use hormones or artificial growth promoters. Rearing follows nature's rhythm for healthier animals and honest characteristics.",
+                 icon: ShieldCheck
+               },
+               {
+                 title: "Taste India Prefers",
+                 desc: "Livestock raised on clean feed develop true desi flavour and consistency Indian homes and chefs expect—from everyday curries to festive menus.",
+                 icon: ChefHat
+               },
+              
+             ].map((item, index) => (
+               <FadeIn key={index} delay={index * 0.1}>
+                 <div className="group flex flex-col h-full">
+                   <div className="w-16 h-16 mb-6 rounded-2xl bg-primary/5 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                      <item.icon strokeWidth={1.5} size={28} />
+                    </div>
+                    <h3 className="text-2xl font-serif text-primary mb-4">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-8 flex-grow font-light">
+                      {item.desc}
+                    </p>
+                   
+                 </div>
+               </FadeIn>
+             ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* --- PHILOSOPHY (Editorial Text) --- */}
+      <section className="py-20 md:py-48 px-6 bg-[#F5F5F0] overflow-hidden">
+        <div className="container mx-auto">
+           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
+              
+              {/* Editorial Image */}
+              <div className="w-full lg:w-5/12 relative group">
+                 <FadeIn delay={0.2}>
+                   <div className="relative aspect-[3/4] overflow-hidden bg-[#E6E2D6]">
+                      <motion.img 
+                        initial={{ scale: 1.2 }}
+                        whileInView={{ scale: 1 }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        src={handsImage}
+                        alt="Hands holding soil" 
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-[#0A1610]/10 mix-blend-multiply" />
+                   </div>
+                   {/* Decorative Border Offset */}
+                   <div className="absolute -top-6 -right-6 w-full h-full border border-[#1C1C1C]/10 z-[-1] transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-2" />
+                 </FadeIn>
+              </div>
+
+              {/* Editorial Content */}
+              <div className="w-full lg:w-7/12">
+                 <FadeIn>
+                   <div className="flex items-center gap-4 mb-6 md:mb-8">
+                      <div className="h-px w-12 bg-[#0A1610]/30" />
+                      <span className="text-[#0A1610] text-xs font-bold tracking-[0.2em] uppercase">Our Practices</span>
+                   </div>
+                   
+                   <h2 className="text-4xl md:text-7xl lg:text-8xl font-serif text-[#1C1C1C] leading-[0.9] mb-8 md:mb-10 -ml-1">
+                      Clean Fields., <br/>
+                      <span className="italic text-[#0A1610]/80">Clean Feed.</span>
+                   </h2>
+
+                   <p className="text-lg md:text-2xl text-[#1C1C1C]/70 font-light leading-relaxed mb-10 md:mb-12 max-w-2xl">
+                   Our fields stay synthetic‑free, our ponds stay balanced, and our livestock are reared with patience and respect. It's a system designed for steady health, better immunity, and traceable purity—without processing, without shortcuts.
+                   </p>
+                   
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 border-t border-[#1C1C1C]/10 pt-8 md:pt-10">
+                      <div className="group">
+                         <h4 className="text-3xl font-serif text-[#1C1C1C] mb-2 group-hover:text-[#0A1610] transition-colors">0%</h4>
+                         <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#1C1C1C]/50 mb-2 block">Chemicals & Pesticides</span>
+                         <p className="text-sm text-[#1C1C1C]/60 leading-relaxed max-w-[200px]">Complete rejection of synthetic fertilizers, GM seed, and treated inputs.</p>
+                      </div>
+                      <div className="group">
+                         <h4 className="text-3xl font-serif text-[#1C1C1C] mb-2 group-hover:text-[#0A1610] transition-colors">100%</h4>
+                         <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#1C1C1C]/50 mb-2 block">Traceable Purity</span>
+                         <p className="text-sm text-[#1C1C1C]/60 leading-relaxed max-w-[200px]">Open gates policy. See how your food is raised—soil to table.</p>
+                      </div>
+                   </div>
+                   <div className="mt-10 md:mt-14">
+  <button className="bg-[#1F4035] text-white uppercase tracking-[0.2em] text-xs font-bold px-8 py-5 flex items-center gap-4 hover:bg-[#17342b] transition-colors">
+    See Our Practices & Organic Feed
+    <span className="text-lg">→</span>
+  </button>
+</div>
+                 </FadeIn>
+              </div>
+           </div>
+        </div>
+        
+      </section>
+
+
+
       {/* --- THE FARMS (Sticky Scroll Layout) --- */}
       <section className="bg-[#E6E2D6] px-6 py-20 md:py-32">
          <div className="container mx-auto">
@@ -339,25 +387,25 @@ export default function Home() {
                <div className="lg:w-2/3 flex flex-col gap-16 md:gap-24 lg:gap-40 pt-0 md:pt-12 lg:pt-0">
                   <FarmCard 
                      number="01"
-                     title="The Sheep"
-                     subtitle="Native Grazing"
-                     desc="Native breeds raised on vast open pastures. Our sheep graze on natural vegetation, resulting in meat that is rich in nutrients and authentic in flavor."
+                     title="Sheep & Lamb"
+                     subtitle="Pasture‑Raised on Organic Fodder"
+                     desc="Pasture‑raised on our organic fodder with open movement and gentle handling. Natural growth, better resilience, and clean, layered characteristics families love."
                      img={sheepImage}
                      link="/farms/sheep"
                   />
                   <FarmCard 
                      number="02"
-                     title="The Hen"
-                     subtitle="True Free-Range"
-                     desc="Active foragers living under the sun. Our country hens are raised without cages or antibiotics, delivering eggs and meat with superior taste and texture."
+                     title="Country Chicken"
+                     subtitle="Free‑Range Natu Kodi"
+                     desc="Free‑range desi chicken that forages, moves, and grows at its own pace. Hormone‑free, nourished on organic greens & grains for authentic flavour and strong natural immunity."
                      img={henImage}
                      link="/farms/hen"
                   />
                   <FarmCard 
                      number="03"
-                     title="The Fish"
-                     subtitle="Freshwater Ecosystems"
-                     desc="Murrel fish cultivated in chemical-free ponds that mimic river currents. Clean water and natural feed ensure firm, clean-tasting fish."
+                     title="Murrel Fish"
+                     subtitle="Nature‑Balanced Aquaculture"
+                     desc="Raised in nature‑balanced ponds with clean water and careful stewardship—no hormones, no antibiotics—for firm, clean fish that thrive naturally."
                      img={murrelFishImage}
                      link="/farms/fish"
                   />
@@ -366,10 +414,103 @@ export default function Home() {
          </div>
       </section>
 
+       <section className="relative bg-[#081c17] text-white py-24 px-6">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+        {/* LEFT SIDE */}
+        <div>
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-[1px] bg-[#C7A74C]" />
+            <span className="text-[#C7A74C] text-xs tracking-[0.3em] uppercase">
+              Get In Touch
+            </span>
+          </div>
+
+          <h2 className="font-serif text-5xl text-white md:text-6xl leading-tight mb-6">
+            Bulk Enquiries <br />
+            <span className="italic text-white/70">& Farm Visits</span>
+          </h2>
+
+          <p className="text-white/70 text-lg leading-relaxed max-w-xl mb-10">
+            We welcome bulk enquiries for livestock (sheep, lamb, country
+            chicken, murrel) and farm-level partnerships, as well as scheduled
+            farm visits to understand our feed and rearing programs.
+          </p>
+
+          <div className="flex flex-wrap gap-4">
+            <Button className="bg-[#C7A74C] text-black px-8 py-6 rounded-none tracking-widest text-xs uppercase hover:bg-[#b8963f]">
+              Schedule a Farm Visit
+            </Button>
+
+            <Button
+              variant="outline"
+              className="bg-[#081c17] border-white/40 text-white px-8 py-6 rounded-none tracking-widest text-xs uppercase hover:bg-white hover:text-black"
+            >
+              Contact Us
+            </Button>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE CONTACT CARDS */}
+        <div className="flex flex-col gap-6">
+
+          {/* PHONE */}
+          <div className="flex items-center gap-6 bg-[#0f2a24] p-8 border border-white/5">
+            <div className="w-14 h-14 rounded-full border border-[#C7A74C]/40 flex items-center justify-center text-[#C7A74C]">
+              <Phone size={22} />
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#C7A74C] mb-1">
+                Phone
+              </p>
+              <p className="text-lg text-white/90 font-medium">
+                +91 9632791544
+              </p>
+            </div>
+          </div>
+
+          {/* WHATSAPP */}
+          <div className="flex items-center gap-6 bg-[#0f2a24] p-8 border border-white/5">
+            <div className="w-14 h-14 rounded-full border border-[#C7A74C]/40 flex items-center justify-center text-[#C7A74C]">
+              <MessageCircle size={22} />
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#C7A74C] mb-1">
+                WhatsApp
+              </p>
+              <p className="text-lg text-white/90 font-medium">
+                +91 9632791544
+              </p>
+            </div>
+          </div>
+
+          {/* LOCATION */}
+          <div className="flex items-start gap-6 bg-[#0f2a24] p-8 border border-white/5">
+            <div className="w-14 h-14 rounded-full border border-[#C7A74C]/40 flex items-center justify-center text-[#C7A74C]">
+              <MapPin size={22} />
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#C7A74C] mb-1">
+                Farm Location
+              </p>
+              <p className="text-white/80 leading-relaxed">
+                SY 199/C, 207/E2/1, Julakal, Waddepalle Mandal, Jogulamba
+                Gadwal District, Telangana — 509 126
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
       {/* --- CTA --- */}
       <CTASection 
-        title='"We do not just farm the land; we steward it for the future."'
-        description="Experience the purity of nature, uninterrupted. Join us in our mission to bring ethical, organic produce to your table."
+        title='"Clean Farming. Honest Rearing. Ethical Growth."'
+        description="A better way to raise livestock. A better way to nourish the future."
         primaryAction={{ text: "Read Our Story", link: "/about" }}
         secondaryAction={{ text: "Explore Farms", link: "/farms" }}
         backgroundImage={harithaFarmImage}
@@ -377,6 +518,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 function FarmCard({ number, title, subtitle, desc, img, link }: any) {
    return (
